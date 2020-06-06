@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내집꾸미기</title>
+    <link rel="stylesheet" href="resources/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="resources/fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <i id="menu_open" class="fa fa-reorder main_480"></i>
+            <div id="user_box">
+                <button>
+                    <a href="#" class="main_480"><i class="fa fa-user-plus"></i></a>
+                    <a href="#" class="main_not480">회원가입</a>
+                </button>
+                <button>
+                    <a href="#" class="main_480"><i class="fa fa-sign-in"></i></a>
+                    <a href="#" class="main_not480">로그인</a>
+                </button>
+            </div>
+            <a href="#"><img id="logo" src="resources/images/logo.png" alt="Logo" title="Logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">온라인 집들이</a></li>
+                    <li><a href="#">스토어</a></li>
+                    <li><a href="#">전문가</a></li>
+                    <li><a href="#">시공 견적</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="visual">
+            <div id="slide_back">
+                <div id="slide_word">
+                    <p>당신을 위한 인테리어</p>
+                    <h2>Modern Housing</h2>
+                </div>
+            </div>
+            <input type="radio" name="slidebtn" id="slide-1" hidden checked="">
+            <input type="radio" name="slidebtn" id="slide-2" hidden >
+            <input type="radio" name="slidebtn" id="slide-3" hidden >
+            <input type="radio" name="slidebtn" id="slide-4" hidden >
+            
+            <label class="slide_controller slide_left" for="slide-2" data-idx="1"><i class="fa fa-chevron-left"></i></label>
+            <label class="slide_controller slide_left" for="slide-3" data-idx="2"><i class="fa fa-chevron-left"></i></label>
+            <label class="slide_controller slide_left" for="slide-4" data-idx="3"><i class="fa fa-chevron-left"></i></label>
+            <label class="slide_controller slide_left" for="slide-1" data-idx="4"><i class="fa fa-chevron-left"></i></label>
+                
+            <label class="slide_controller slide_right" for="slide-2" data-idx="1"><i class="fa fa-chevron-right"></i></label>
+            <label class="slide_controller slide_right" for="slide-3" data-idx="2"><i class="fa fa-chevron-right"></i></label>
+            <label class="slide_controller slide_right" for="slide-4" data-idx="3"><i class="fa fa-chevron-right"></i></label>
+            <label class="slide_controller slide_right" for="slide-1" data-idx="4"><i class="fa fa-chevron-right"></i></label>
+            <div class="slide">
+                <img src="resources/images/main_slide1.jpg" class="slide_img" title="slide img1" alt="slide img1">
+                <img src="resources/images/main_slide2.jpg" class="slide_img" title="slide img2" alt="slide img2">
+                <img src="resources/images/main_slide3.jpg" class="slide_img" title="slide img3" alt="slide img3">
+            </div>
+        </div>
+        <div id="content">
+            <div id="online_housing" class="content_box">
+                <h2>Online Housing</h2>
+                <div class="content_word">
+                    <div class="online_box">
+                        <div class="online_picture">
+                            <img src="resources/images/1_before.jpg" title="online_housing_img" alt="online_housing_img">
+                            <img class="online_after" src="resources/images/1_after.jpg" title="online_housing_img" alt="online_housing_img">
+                        </div>
+                        <div class="online_review">
+                            <p class="online_review_user">user1</p>
+                            <p class="online_review_score">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="online_box">
+                        <div class="online_picture">
+                            <img src="resources/images/2_before.jpg" title="online_housing_img" alt="online_housing_img">
+                            <img class="online_after" src="resources/images/2_after.jpg" title="online_housing_img" alt="online_housing_img">
+                        </div>
+                        <div class="online_review">
+                            <p class="online_review_user">user2</p>
+                            <p class="online_review_score">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="online_box">
+                        <div class="online_picture">
+                            <img src="resources/images/3_before.jpg" title="online_housing_img" alt="online_housing_img">
+                            <img class="online_after" src="resources/images/3_after.jpg" title="online_housing_img" alt="online_housing_img">
+                        </div>
+                        <div class="online_review">
+                            <p class="online_review_user">user3</p>
+                            <p class="online_review_score">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="more_btn">더보기</button>
+            </div>
+            <div id="specialist" class="content_box">
+                <h2>Specialist</h2>
+                <div class="content_word">
+                    <div class="specialist_box">
+                        <img src="resources/images/specialist1.jpg" title="specialist" alt="specialist">
+                        <div class="specialist_box_back">
+                            <p class="specialist_box_title">전문가1</p>
+                            <p class="specialist_box_id">ID:specialist1</p>
+                            <button class="specialist_more"><i class="fa fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="specialist_box">
+                        <img src="resources/images/specialist2.jpg" title="specialist" alt="specialist">
+                        <div class="specialist_box_back">
+                            <p class="specialist_box_title">전문가2</p>
+                            <p class="specialist_box_id">ID:specialist2</p>
+                            <button class="specialist_more"><i class="fa fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="specialist_box">
+                        <img src="resources/images/specialist3.jpg" title="specialist" alt="specialist">
+                        <div class="specialist_box_back">
+                            <p class="specialist_box_title">전문가3</p>
+                            <p class="specialist_box_id">ID:specialist3</p>
+                            <button class="specialist_more"><i class="fa fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="specialist_box">
+                        <img src="resources/images/specialist4.jpg" title="specialist" alt="specialist">
+                        <div class="specialist_box_back">
+                            <p class="specialist_box_title">전문가4</p>
+                            <p class="specialist_box_id">ID:specialist4</p>
+                            <button class="specialist_more"><i class="fa fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="review" class="content_box">
+                <h2>Review</h2>
+                <div class="content_word">
+                    <div class="review_card">
+                        <div class="review_text">
+                            <p class="specialist_name">전문가 : 전문가2(specialist2)</p>
+                            <p class="user_name">작성자 : 박재현(park)</p>
+                            <p class="coast">비용 : 3,200,000</p>
+                            <p class="review_word">원하던 아이언맨 컨셉으로 너무 잘 꾸며주셨습니다!</p>
+                            <p class="score">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="review_card">
+                        <div class="review_text">
+                            <p class="specialist_name">전문가 : 전문가4(specialist4)</p>
+                            <p class="user_name">작성자 : 김정수(kim)</p>
+                            <p class="coast">비용 : 5,500,000</p>
+                            <p class="review_word">요구사항대로 부드러운 느낌을 잘 살려주셨습니다.</p>
+                            <p class="score">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="more_btn">더보기</button>
+            </div>
+        </div>
+        <footer>
+            Copyright (C) 2020 by MyHome Inc All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>
