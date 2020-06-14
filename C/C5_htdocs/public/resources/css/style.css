@@ -165,33 +165,27 @@ nav > ul > li > a:hover{color:#4E2B0E;}
     height: 100%;
     z-index: 1000;
     overflow: hidden;
-    background-color: #5B9;
+    background-color: #5EBC91;
 }
 
 #visual_back > *{color: #fff;margin: 0;}
 
 #visual_back > p{
     width: 112%;
+    margin-top: 20px;
     font-size: 20px;
-    padding: 10px;
-    border-left: 20px solid #487;
+    padding: 5px;
     font-weight: 500;
-    margin-top: 40px;
-    background-color: #598;
+    background-color: #5A9F80;
 }
 
 #visual_back > h2{font-size: 70px;}
 #visual_back > h6{
     position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    padding: 10px;
+    bottom: 20px;
     font-size: 20px;
-    color: #376;
+    color: #3F765D;
     letter-spacing: 13px;
-    border-radius: 5px;
-    background-color: #4A8;
 }
 
 .slide_col{
@@ -242,7 +236,7 @@ nav > ul > li > a:hover{color:#4E2B0E;}
 @media screen and (max-width:480px){
     #visual{height: 300px;margin-top: 100px;}
     #visual_back { width: 50%;}
-    #visual_back > p{font-size: 15px;}
+    #visual_back > p{font-size: 15px;margin-top: 7%;}
     #visual_back > h2{font-size: 35px;}
     #visual_back > h6{font-size: 16px;letter-spacing: 7px;}
     .slide_col{right: -60%;}
@@ -271,9 +265,8 @@ nav > ul > li > a:hover{color:#4E2B0E;}
 /* 콘텐츠 */
 .content_wrap{padding-top: 50px;}
 .content_title{
-    width: 100%;
-    max-width: 1500px;
-    margin: 40px auto;
+    margin: 40px 50px;
+    margin-top: 50px;
     border-bottom: 2px solid #DEA975;
     position: relative;
 }
@@ -312,18 +305,17 @@ nav > ul > li > a:hover{color:#4E2B0E;}
     transition: 0.3s all;
     font-size: 20px;
     font-weight: bold;
-    margin: 20px calc(50vw - 100px);
-    margin-bottom: 50px;
+    margin: 20px 0px 50px 80vw;
     background-color: rgba(0, 0, 0, 0);
 }
 
-.content_box{padding:0 50px 50px 50px; max-width: 1600px; margin: 0 auto;}
+.content_box{padding:0 50px 50px 50px;}
 
 .more_btn:hover{background-color: #8F613A;color:#D5F5E3;}
 
 @media screen and (max-width:480px){
     .content_wrap{padding: 0;}
-    .content_title{padding-top: 50px; margin:0px; margin-bottom: 10px;}
+    .content_title{padding-top: 50px; margin:10px 0;}
     .content_box{padding: 20px; margin: 0 30px;}
     .more_btn{margin-left: calc((100vw - 200px)/2);}
     .content_title_line{width: 50%;}
@@ -370,20 +362,18 @@ nav > ul > li > a:hover{color:#4E2B0E;}
     width: 100%;
     margin: 5px auto;
     background-color: #C19476;
+    padding: 15px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     font-size: 20px;
     font-weight: 500;
     position: relative;
     color: #fff;
+    text-align: right;
     margin: 0;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    overflow: hidden;
 }
 
-.main_online_info > .score{display: inline-block; padding: 15px;}
-.main_online_info > span{padding: 20px;line-height: 20px;background-color: #C47F51;}
+.main_online_info > .score{display: inline-block; float: left;}
 .main_online_info *{color: #fff;}
 
 @media screen and (max-width:480px){
@@ -398,17 +388,15 @@ nav > ul > li > a:hover{color:#4E2B0E;}
     display: grid;
     grid-template-columns: repeat(4,1fr);
     padding: 50px 20px;
-    padding-top: 20px;
 }
 
 .main_specialist_card{
     position: relative;
     width: 80%;
-    height: 370px;
+    height: 350px;
     perspective: 1000px;
     cursor: pointer;
     transition: 0.3s all;
-    margin: 0 auto;
 }
 
 .main_specialist_card >  *{
@@ -436,78 +424,48 @@ nav > ul > li > a:hover{color:#4E2B0E;}
     border-radius: 5px;
     transform: rotateY(-180deg);
     background-color: #fff;
-    border-top: 5px solid #D38B47;
 }
 .main_specialist_card:hover{margin-top: -15px;}
 .main_specialist_card:hover > .img_box{transform: rotateY(180deg);}
 .main_specialist_card:hover > .main_specialist_back{transform: rotateY(0deg);}
 
 .main_specialist_back > h2{
-    margin-top: 15%;
+    margin-top: 10%;
     padding: 20px 50px 10px 10px;
-    margin-left: 50px;
+    margin-left: 20px;
     font-size: 30px;
     display: inline-block;
     border-bottom: 2px solid #000;
 }
 
 .main_specialist_back > p{
-    margin-left: 37%;
+    margin-left: 30%;
     font-size: 18px;
 }
 
 .specialist_more{
     width: 50%;
     margin: 20px 25%;
-    margin-top: 25%;
+    margin-top: 30%;
     height: 50px;
-    font-weight: bold;
-    border: 2px solid #cc9d6e;
-    color: #cc9d6e;
+    border: 1px solid #C8A583;
+    color: #C8A583;
     background-color: rgba(0, 0, 0, 0);
     transition: 0.3s all;
     border-radius: 5px;
 }
 
-.specialist_more:hover{background-color: #cc9d6e; color: #fff;}
+.specialist_more:hover{background-color: #C8A583; color: #fff;}
 
 .main_specialist_back > span{
-    width: 50px;
-    height: 50px;
     font-size: 20px;
     font-weight: bold;
     position: absolute;
-    top: -15px;
-    right: -15px;
-    text-align: center;
-    line-height: 50px;
+    top: -10px;
+    right: -10px;
+    padding: 10px 20px;
     background-color: #D38B47;
     color: #fff;
-}
-
-.main_specialist_back > span > span{
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    bottom: -25px;
-    left: -25px;
-    background-color: #D39C68;
-}
-
-.main_specialist_back > div{
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    bottom: 0px;
-    width: 80%;
-    height: 20px;
-    background-color: #CF9357;
-}
-
-.main_specialist_back > div > div{
-    width: 20px;
-    height: 20px;
-    background-color: #B2793F;
 }
 
 @media screen and (max-width:480px){
@@ -574,3 +532,99 @@ footer{
     background-color: #604D40;
     line-height: 50px;
 }
+
+/* store */
+#store_header{
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    padding: 10px 50px;
+    background-color: #D5F5E3;
+    z-index: 20;
+}
+#store_area{padding: 0;position: relative;}
+#store_list{
+    background-color: #B7E3CA;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+#store_list > .card{
+    width: 90%;
+    margin: 20px auto;
+    border: 0;
+    border-bottom: 5px solid #A26841;
+}
+
+#store_list > .card > .card-body > .card-title{font-size: 23px;}
+
+#search_form{
+    width: calc(100% - 60px);
+    height: 80%;
+    border: 0;
+    margin: 6px 0;
+    font-size: 15px;
+    padding: 15px;
+    border-left: 5px solid #A26841;
+}
+
+#search_btn{
+    margin-left: -4px;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #C56D35;
+}
+
+#search_btn i{color: #fff;}
+
+#drop_box{
+    position: absolute;
+    bottom: -230px;
+    right: 0px;
+    opacity: 0.8;
+    cursor: pointer;
+    width: 250px;
+    height: 200px;
+    background-color: #A26841;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: 0.3s all;
+}
+
+#drop_box:hover{opacity: 1;}
+
+#drop_title{height: 50px;}
+#drop_title > i{color: #fff;font-size: 25px; margin: 10px;}
+#drop_area{background-color: #DD9462;width: 100%;height: 150px;color: #fff;line-height: 150px;font-size: 18px;}
+
+#basket_list > tr > td{height: 50px; line-height: 50px;}
+.basket_item_img{width: 50px; border-radius: 2px;}
+.basket_num{width: 100px; margin-top: 10px;}
+.basket_del{margin: 10px 20px;}
+
+#sell_box{position: relative;padding: 20px;}
+#basket_btn{position: absolute; right: 20px; top: 15px;}
+#recepit{width: 100%;}
+/* C */
+
+#captcha{width: 100%;border: 1px solid #000;height: 100px;}
+#housing_btn{margin-right: 50px;margin-top: -20px;}
+#housing_list{display:  grid; grid-template-columns: repeat(2,1fr); margin-top: 60px;}
+.housing_card{width: 95%; margin: 20px auto;}
+.housing_card > .img-box{width: 100%; display: grid; height: 300px; grid-template-columns: repeat(2,1fr);}
+.housing_card > .img-box > div{width:100%;overflow: hidden; height: 100%;}
+.housing_card > .img-box > div > img{width: 100%; min-height: 300px;}
+.housing_score_box{width: 80%; margin: 20px auto;display: grid; grid-template-columns: repeat(5,1fr);}
+.housing_score_value{font-size: 30px; margin:0 auto; cursor: pointer;}
+#specialist_list{padding-top: 40px;display: grid;grid-template-columns: repeat(4,1fr);}
+#review_list{display: grid;grid-template-columns: repeat(2,1fr);}
+#building_btn{margin-right: 50px; margin-top: -20px;}
+#building_post_list{margin-top: 80px;}
+.review_card,.building_post_card,.building_request_card,.building_request_load_card{border-left: 5px solid #A26841;}
+
+/* -C과제 총 3시간 30분 걸림- */

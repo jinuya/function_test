@@ -1,63 +1,5 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>내집꾸미기</title>
-    <link rel="stylesheet" href="resources/bootstrap-4.3.1-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="resources/fontawesome/css/font-awesome.css">
-    <link rel="stylesheet" href="resources/css/style.css">
-</head>
-<body>
-    <div id="wrap">
-        <!-- 헤더 -->
-        <header>
-            <div class="main_480" id="menu_bar"><i class="fa fa-bars"></i></div>
-            <div id="user_area">
-                    <a href="#" class="main_user main_not480">로그인</a>
-                    <a href="#" class="main_user main_480"><i class="fa fa-sign-in"></i></a>
-                    <a href="#" class="main_user main_not480">회원가입</a>
-                    <a href="#" class="main_user main_480"><i class="fa fa-user-plus"></i></a>
-            </div>
-            <div id="logo"><img src="resources/images/logo.png" title="logo" alt="logo"></div>
-            <!-- 네비게이션 -->
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">온라인 집들이</a></li>
-                    <li><a href="#">스토어</a></li>
-                    <li><a href="#">전문가</a></li>
-                    <li><a href="#">시공 견적</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- 비쥬얼(슬라이드) -->
-        <div id="visual">
-            <div id="visual_back">
-                <h2>Decorating</h2>
-                <h2>House</h2>
-                <p>당신이 원하는 모든 인테리어</p>
-                <h6>DreamingHouse ㅡ</h6>
-            </div>
-
-            <input type="radio" id="slide_1" data-id="1" checked hidden >
-            <input type="radio" id="slide_2" data-id="2" hidden >
-            <input type="radio" id="slide_3" data-id="3" hidden >
-            <input type="radio" id="slide_4" data-id="4" hidden >
-
-            <label class="slide_btn slide_left"><i class="fa fa-angle-left"></i></label>
-            <label class="slide_btn slide_right"><i class="fa fa-angle-right"></i></label>
-
-            <p class="slide_col">Every Interior</p>
-
-            <div id="slide">
-                <img src="resources/images/slide_1.jpg" title="slide_img" alt="slide_img">
-                <img src="resources/images/slide_2.jpg" title="slide_img" alt="slide_img">
-                <img src="resources/images/slide_3.jpg" title="slide_img" alt="slide_img">
-            </div>
-        </div>
-        <!-- 콘텐츠 -->
-        <div id="content">
+<!-- 콘텐츠 -->
+<div id="content">
             
             <div class="content_wrap">
                 
@@ -81,7 +23,7 @@
                                 <i class="fa fa-star star"></i>
                                 <span>(4)</span>
                             </div>
-                            <span>user1</span>
+                            user1
                             <div class="main_online_info_style"></div>
                         </div>
                     </div>
@@ -100,7 +42,7 @@
                                 <i class="fa fa-star star"></i>
                                 <span>(3)</span>
                             </div>
-                            <span>user2</span>
+                            user2
                             <div class="main_online_info_style"></div>
                         </div>
                     </div>
@@ -119,7 +61,7 @@
                                 <i class="fa fa-star star blink"></i>
                                 <span>(5)</span>
                             </div>
-                            <span>user3</span>
+                            user3
                             <div class="main_online_info_style"></div>
                         </div>
                     </div>
@@ -138,7 +80,7 @@
                                 <i class="fa fa-star star"></i>
                                 <span>(2)</span>
                             </div>
-                            <span>user4</span>
+                            user4
                             <div class="main_online_info_style"></div>
                         </div>
                     </div>
@@ -160,8 +102,7 @@
                         <div class="main_specialist_back">
                             <h2>전문가1</h2>
                             <p>specialist1</p>
-                            <span>1<span></span></span>
-                            <div><div></div></div>
+                            <span>1</span>
                             <button class="specialist_more">더보기</button>
                         </div>
                     </div>
@@ -170,8 +111,7 @@
                         <div class="main_specialist_back">
                             <h2>전문가2</h2>
                             <p>specialist2</p>
-                            <span>2<span></span></span>
-                            <div><div></div></div>
+                            <span>2</span>
                             <button class="specialist_more">더보기</button>
                         </div>
                     </div>
@@ -180,8 +120,7 @@
                         <div class="main_specialist_back">
                             <h2>전문가3</h2>
                             <p>specialist3</p>
-                            <span>3<span></span></span>
-                            <div><div></div></div>
+                            <span>3</span>
                             <button class="specialist_more">더보기</button>
                         </div>
                     </div>
@@ -190,8 +129,7 @@
                         <div class="main_specialist_back">
                             <h2>전문가4</h2>
                             <p>specialist4</p>
-                            <span>4<span></span></span>
-                            <div><div></div></div>
+                            <span>4</span>
                             <button class="specialist_more">더보기</button>
                         </div>
                     </div>
@@ -248,10 +186,3 @@
                 </div>
                 <button class="more_btn">더보기</button>
             </div>
-
-        </div>
-        <!-- 푸터 -->
-        <footer>Copyright (C) 2020 by MyHome Inc All Rights Reserved.</footer>
-    </div>
-</body>
-</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내집꾸미기</title>
+    <link rel="stylesheet" href="resources/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="resources/fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <script src="resources/js/jquery-3.4.1.min.js"></script>
+    <script src="resources/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="resources/js/store.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header>
+            <div class="main_480" id="menu_bar"><i class="fa fa-bars"></i></div>
+            <div id="user_area">
+                    <a href="#" class="main_user main_not480">로그인</a>
+                    <a href="#" class="main_user main_480"><i class="fa fa-sign-in"></i></a>
+                    <a href="#" class="main_user main_not480">회원가입</a>
+                    <a href="#" class="main_user main_480"><i class="fa fa-user-plus"></i></a>
+            </div>
+            <div id="logo"><img src="resources/images/logo.png" title="logo" alt="logo"></div>
+            <!-- 네비게이션 -->
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">온라인 집들이</a></li>
+                    <li><a href="#">스토어</a></li>
+                    <li><a href="#">전문가</a></li>
+                    <li><a href="#">시공 견적</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 비쥬얼(슬라이드) -->
+        <div id="visual">
+            <div id="visual_back">
+                <h2>Decorating</h2>
+                <p>당신이 원하는 모든 인테리어</p>
+                <h2>House</h2>
+                <h6>DreamingHouse ㅡ</h6>
+            </div>
+
+            <input type="radio" id="slide_1" data-id="1" checked hidden >
+            <input type="radio" id="slide_2" data-id="2" hidden >
+            <input type="radio" id="slide_3" data-id="3" hidden >
+            <input type="radio" id="slide_4" data-id="4" hidden >
+
+            <label class="slide_btn slide_left"><i class="fa fa-angle-left"></i></label>
+            <label class="slide_btn slide_right"><i class="fa fa-angle-right"></i></label>
+
+            <p class="slide_col">Every Interior</p>
+
+            <div id="slide">
+                <img src="resources/images/slide_1.jpg" title="slide_img" alt="slide_img">
+                <img src="resources/images/slide_2.jpg" title="slide_img" alt="slide_img">
+                <img src="resources/images/slide_3.jpg" title="slide_img" alt="slide_img">
+            </div>
+        </div>
+        <!-- 콘텐츠 -->
+        <div id="content">
+            
+            <div class="content_wrap">
+                
+                <div class="content_title">
+                    <div class="content_title_line"></div>
+                    <h2>Store</h2>
+                </div>
+
+                <div class="content_box" id="store_area">
+                    <div id="store_header">
+                        <div id="search">
+                            <input type="text" id="search_form" placeholder="검색어를 입력해주세요.">
+                            <button id="search_btn"><i class="fa fa-search"></i></button>
+                        </div>
+
+                        <div id="drop_box">
+                            <div id="drop_title"><i class="fa fa-shopping-cart"></i></div>
+                            <div id="drop_area" class="text-center">
+                                이곳에 상품을 넣어주세요.
+                            </div>
+                        </div>
+                    </div>
+                    <div id="store_list">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="content_wrap">
+                <div class="content_title">
+                    <div class="content_title_line"></div>
+                    <h2>장바구니</h2>
+                </div>
+
+                <div class="content_box" id="basket_area">
+                    <table class="table m-0">
+                        <thead class="bg-light">
+                            <tr>
+                                <th>#</th>
+                                <th></th>
+                                <th>상품</th>
+                                <th>브랜드</th>
+                                <th>가격</th>
+                                <th>수량</th>
+                                <th>합계</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white" id="basket_list">
+                        </tbody>
+                    </table>
+
+                    <div id="sell_box" class="bg-light border-top rounded-bottom"> 총 합계 : <span id="sell_price">0</span>원 <button class="btn btn-dark" id="basket_btn" data-target="#basket_popup" data-toggle="modal">구매하기</button> </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="basket_popup" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-info">
+                        <h2 class="modal-title text-white">구매하기</h2>
+                        <button class="close text-white" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="basket_form" name="basket_form">
+                            <div class="form-group">
+                                <label for="name">이름</label>
+                                <input type="text" id="name" class="form-control" placeholder="이름을 입력해주세요.">
+                            </div>
+                            <div class="form-group">
+                                <label for="port">주소</label>
+                                <input type="text" id="port" class="form-control" placeholder="주소를 입력해주세요.">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer bg-light">
+                        <button class="btn btn-secondary" id="basket_sell_close" data-dismiss="modal">취소</button>
+                        <button class="btn btn-primary" id="basket_sell">구매 완료</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="close" data-target="#recepit_popup" data-toggle="modal" id="recepit_btn"></button>
+        <div id="recepit_popup" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-info">
+                        <h2 class="modal-title text-white">영수증</h2>
+                        <button class="close text-white" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <canvas id="recepit"></canvas>
+                    </div>
+                    <div class="modal-footer bg-light">
+                        <button class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 푸터 -->
+        <footer>Copyright (C) 2020 by MyHome Inc All Rights Reserved.</footer>
+    </div>
+</body>
+</html>
