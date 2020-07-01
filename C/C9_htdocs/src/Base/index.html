@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내집꾸미기</title>
+    <link rel="stylesheet" href="resources/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <script src="resources/js/jquery-3.4.1.min.js"></script>
+    <script src="resources/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="resources/js/app.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header>
+            <div id="user_area">
+                <a href="#" class="main_user">회원가입</a>
+                <a href="#" class="main_user">로그인</a>
+            </div>
+            <i class="fa fa-reorder main_480" id="menu_open"></i>
+            <div id="logo"><img src="resources/image/logo.png" alt="logo" title="logo"></div>
+            <!-- 네비게이션 -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="#">온라인 집들이</a></li>
+                    <li><a href="store.html">스토어</a></li>
+                    <li><a href="#">전문가</a></li>
+                    <li><a href="#">시공 견적</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 비쥬얼 -->
+        <div id="visual">
+            <div id="visual_back">
+                <div id="visual_side"></div>
+                <div id="visual_word">
+                    <div id="visual_word_circle"></div>
+                    <p>Every Design</p>
+                    <h2 id="h21">Decorating</h2>
+                    <h2 id="h22">House</h2>
+                    <h5>집꾸미기의 모든것</h5>
+                </div>
+            </div>
+            <!-- 슬라이드 -->
+            <div id="slide">
+                <img src="resources/image/slide1.jpg" title="slide" alt="slide">
+                <img src="resources/image/slide2.jpg" title="slide" alt="slide">
+                <img src="resources/image/slide3.jpg" title="slide" alt="slide">
+            </div>
+
+            <button class="slide_btn" id="left_btn"><i class="fa fa-angle-left text-white"></i></button>
+            <button class="slide_btn" id="right_btn"><i class="fa fa-angle-right text-white"></i></button>
+
+        </div>
+        <div id="content">
+            <!-- 집들이 -->
+            <div class="content_wrap">
+                <div class="content_title">
+                    <div class="content_title_circle"></div>
+                    <h3>Online Housing</h3>
+                </div>
+
+                <div class="content_box" id="main_housing_list">
+                    <div class="housing_card">
+                        <div class="img-box">
+                            <img src="resources/image/1_before.jpg" alt="housing_img" title="housing_img" class="left-img">
+                            <img src="resources/image/1_after.jpg" alt="housing_img" title="housing_img" class="right-img">
+                        </div>
+                        <div class="housing_card_info">
+                            <p>user1</p>
+                            <span><i class="fa fa-star text-warning mr-1"></i>(4)</span>
+                        </div>
+                    </div>
+                    <div class="housing_card">
+                        <div class="img-box">
+                            <img src="resources/image/2_before.jpg" alt="housing_img" title="housing_img" class="left-img">
+                            <img src="resources/image/2_after.jpg" alt="housing_img" title="housing_img" class="right-img">
+                        </div>
+                        <div class="housing_card_info">
+                            <p>user2</p>
+                            <span><i class="fa fa-star text-warning mr-1"></i>(3)</span>
+                        </div>
+                    </div>
+                    <div class="housing_card">
+                        <div class="img-box">
+                            <img src="resources/image/3_before.jpg" alt="housing_img" title="housing_img" class="left-img">
+                            <img src="resources/image/3_after.jpg" alt="housing_img" title="housing_img" class="right-img">
+                        </div>
+                        <div class="housing_card_info">
+                            <p>user3</p>
+                            <span><i class="fa fa-star text-warning mr-1"></i>(5)</span>
+                        </div>
+                    </div>
+                    <div class="housing_card">
+                        <div class="img-box">
+                            <img src="resources/image/4_before.jpg" alt="housing_img" title="housing_img" class="left-img">
+                            <img src="resources/image/4_after.jpg" alt="housing_img" title="housing_img" class="right-img">
+                        </div>
+                        <div class="housing_card_info">
+                            <p>user4</p>
+                            <span><i class="fa fa-star text-warning mr-1"></i>(2)</span>
+                        </div>
+                    </div>
+
+                    <button class="content_button">더보기</button>
+                </div>
+            </div>
+
+            <div class="content_wrap">
+                <div class="content_title">
+                    <div class="content_title_circle"></div>
+                    <h3>Specialist</h3>
+                </div>
+
+                <div class="content_box" id="specialist_list">
+                    <div class="specialist_card">
+                        <div class="specialist_img">
+                            <img src="resources/image/specialist1.jpg" alt="specialist_img" title="specialist1">
+                        </div>
+                        <div class="specialist_back">
+                            <h5>specialist1</h5>
+                            <p>전문가1</p>
+                            <span>1 <span></span> </span>
+                            <button class="specialist_button">더보기</button>
+                            <div class="specialist_card_line"><div></div></div>
+                        </div>
+                    </div>
+                    <div class="specialist_card">
+                        <div class="specialist_img">
+                            <img src="resources/image/specialist2.jpg" alt="specialist_img" title="specialist2">
+                        </div>
+                        <div class="specialist_back">
+                            <h5>specialist2</h5>
+                            <p>전문가2</p>
+                            <span>2 <span></span> </span>
+                            <button class="specialist_button">더보기</button>
+                            <div class="specialist_card_line"><div></div></div>
+                        </div>
+                    </div>
+                    <div class="specialist_card">
+                        <div class="specialist_img">
+                            <img src="resources/image/specialist3.jpg" alt="specialist_img" title="specialist3">
+                        </div>
+                        <div class="specialist_back">
+                            <h5>specialist3</h5>
+                            <p>전문가3</p>
+                            <span>3 <span></span> </span>
+                            <button class="specialist_button">더보기</button>
+                            <div class="specialist_card_line"><div></div></div>
+                        </div>
+                    </div>
+                    <div class="specialist_card">
+                        <div class="specialist_img">
+                            <img src="resources/image/specialist4.jpg" alt="specialist_img" title="specialist4">
+                        </div>
+                        <div class="specialist_back">
+                            <h5>specialist4</h5>
+                            <p>전문가4</p>
+                            <span>4 <span></span> </span>
+                            <button class="specialist_button">더보기</button>
+                            <div class="specialist_card_line"><div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content_wrap">
+                <div class="content_title">
+                    <div class="content_title_circle"></div>
+                    <h3>Review</h3>
+                </div>
+
+                <div class="content_box" id="review_list">
+                    <div class="review_card">
+                        <div class="review_card_header">
+                            <h5>전문가2(specialist2)</h5>
+                            <p class="text-muted">비용 : 3,200,000 원</p>
+                            <p><i class="fa fa-star text-warning mr-1"></i>(5)</p>
+                        </div>
+                        <div class="review_card_body">
+                            <p class="p-2">" 원하던 아이언맨 컨셉으로 너무 잘 꾸며주셨습니다! "</p>
+                            <p class="text-right">- 박재현(park)</p>
+                        </div>
+                    </div>
+                    <div class="review_card">
+                        <div class="review_card_header">
+                            <h5>전문가4(specialist4)</h5>
+                            <p class="text-muted">비용 : 5,500,000 원</p>
+                            <p><i class="fa fa-star text-warning mr-1"></i>(5)</p>
+                        </div>
+                        <div class="review_card_body">
+                            <p class="p-2">" 요구사항대로 부드러운 느낌을 잘 살려주셨습니다. "</p>
+                            <p class="text-right">- 김정수(kim)</p>
+                        </div>
+                    </div>
+
+                    <button class="content_button">더보기</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 푸터 -->
+        <footer>
+            Copyright (C) 2020 by MyHome Inc All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>
